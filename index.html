@@ -1,1 +1,168 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <title>Gota da Consciência Populacional | Agro Forte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+    <!-- Botão de Acessibilidade Fixo -->
+    <div class="botao-acessibilidade" id="botaoAcessibilidade">
+        <button id="btnAcessibilidade" aria-label="Abrir menu de acessibilidade">♿ Acessibilidade</button>
+        <div class="menu-acessibilidade" id="menuAcessibilidade">
+            <button id="aumentarFonte" aria-label="Aumentar fonte">A+ Aumentar fonte</button>
+            <button id="diminuirFonte" aria-label="Diminuir fonte">A- Diminuir fonte</button>
+            <button id="altoContraste" aria-label="Ativar alto contraste">◐ Alto contraste</button>
+        </div>
+    </div>
+
+    <!-- Cabeçalho -->
+    <header>
+        <div class="container">
+            <h1>💧 Gota da Consciência Populacional</h1>
+            <p class="subtitulo">Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+        </div>
+    </header>
+
+    <!-- Menu de Navegação -->
+    <nav>
+        <div class="container">
+            <ul class="menu">
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#problema">O Problema</a></li>
+                <li><a href="#dicas">Dicas de Economia</a></li>
+                <li><a href="#calculadora">Calculadora de Água</a></li>
+                <li><a href="#impactos">Impactos</a></li>
+                <li><a href="#conclusao">Conclusão</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Conteúdo Principal -->
+    <main>
+        <!-- SEÇÃO 1: INÍCIO -->
+        <section id="inicio" class="secao">
+            <div class="container">
+                <h2>🌱 Agricultura Sustentável começa com consciência</h2>
+                <p>Bem-vindo ao projeto <strong>Gota da Consciência Populacional</strong>. Nosso objetivo é mostrar a verdadeira natureza da água e incentivar o uso consciente na agricultura, sem desperdícios.</p>
+                <p>A água é um recurso finito e essencial para a produção de alimentos. Aprender a utilizá-la de forma eficiente é responsabilidade de todos.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 2: O PROBLEMA -->
+        <section id="problema" class="secao bg-claro">
+            <div class="container">
+                <h2>💔 O Problema: Desperdício de água na agricultura</h2>
+                <p>A agricultura é responsável por cerca de <strong>70% de todo o consumo de água doce no mundo</strong>. No Brasil, práticas ineficientes de irrigação desperdiçam bilhões de litros por ano.</p>
+                <p>O desperdício ocorre por diversos fatores: vazamentos, irrigação mal planejada, falta de tecnologia e desconhecimento das necessidades reais de cada cultura.</p>
+                <p><strong>Por que isso é importante?</strong> Ensinar a economizar água garante produção de alimentos para o futuro, preserva rios e nascentes, reduz custos para os agricultores e protege o meio ambiente.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 3: DICAS DE ECONOMIA -->
+        <section id="dicas" class="secao">
+            <div class="container">
+                <h2>💡 Dicas para economizar água no campo</h2>
+                <div class="cards-dicas">
+                    <div class="card">
+                        <h3>🚿 Irrigação por gotejamento</h3>
+                        <p>Reduz o desperdício em até 60% comparado à irrigação por aspersão.</p>
+                    </div>
+                    <div class="card">
+                        <h3>📊 Monitoramento do solo</h3>
+                        <p>Use sensores de umidade para irrigar apenas quando necessário.</p>
+                    </div>
+                    <div class="card">
+                        <h3>⏰ Irrigação noturna</h3>
+                        <p>Regar à noite reduz a perda por evaporação.</p>
+                    </div>
+                    <div class="card">
+                        <h3>♻️ Reúso da água</h3>
+                        <p>Aproveite água da chuva e trate água residuais para irrigação.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 4: CALCULADORA DE ÁGUA (FUNCIONALIDADE INTERATIVA) -->
+        <section id="calculadora" class="secao bg-claro">
+            <div class="container">
+                <h2>📊 Calculadora de Irrigação Sustentável</h2>
+                <p>Descubra a quantidade ideal de água para diferentes culturas e evite o desperdício.</p>
+                
+                <div class="calculadora">
+                    <label for="cultura">Escolha a cultura:</label>
+                    <select id="cultura">
+                        <option value="milho">🌽 Milho</option>
+                        <option value="feijao">🫘 Feijão</option>
+                        <option value="soja">🌱 Soja</option>
+                        <option value="tomate">🍅 Tomate</option>
+                        <option value="cafe">☕ Café</option>
+                    </select>
+
+                    <label for="area">Área plantada (hectares):</label>
+                    <input type="number" id="area" placeholder="Ex: 5" min="0.1" step="0.1" value="1">
+
+                    <button id="calcularBtn">Calcular consumo de água 💧</button>
+
+                    <div class="resultado" id="resultadoCalculadora">
+                        <!-- O resultado aparecerá aqui -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 5: IMPACTOS (TABELA PRODUZIDA POR VOCÊ) -->
+        <section id="impactos" class="secao">
+            <div class="container">
+                <h2>📈 Impactos da irrigação consciente</h2>
+                <p>Veja na tabela abaixo o consumo médio de água por cultura e como pequenas mudanças fazem diferença:</p>
+                
+                <div class="tabela-responsiva">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Cultura</th>
+                                <th>Consumo ideal (L/hectare/dia)</th>
+                                <th>Com desperdício (L/hectare/dia)</th>
+                                <th>Economia possível</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr><td>🌽 Milho</td><td>40.000</td><td>60.000</td><td>20.000 L/dia</td></tr>
+                            <tr><td>🫘 Feijão</td><td>35.000</td><td>55.000</td><td>20.000 L/dia</td></tr>
+                            <tr><td>🌱 Soja</td><td>45.000</td><td>70.000</td><td>25.000 L/dia</td></tr>
+                            <tr><td>🍅 Tomate</td><td>30.000</td><td>50.000</td><td>20.000 L/dia</td></tr>
+                            <tr><td>☕ Café</td><td>25.000</td><td>40.000</td><td>15.000 L/dia</td></tr>
+                        </tbody>
+                    </table>
+                </div>
+                <p class="fonte-tabela">*Dados aproximados para fins educativos do projeto Agrinho.</p>
+            </div>
+        </section>
+
+        <!-- SEÇÃO 6: CONCLUSÃO -->
+        <section id="conclusao" class="secao bg-claro">
+            <div class="container">
+                <h2>🌎 Conclusão: O futuro da água é agora!</h2>
+                <p>A agricultura forte e sustentável depende do equilíbrio entre produção e preservação do meio ambiente. Cada gota economizada hoje garante água para as próximas gerações.</p>
+                <p><strong>Gota da Consciência Populacional</strong> convida você a refletir: pequenas atitudes no campo e na cidade transformam o futuro do nosso planeta.</p>
+                <p>💙 Use a água com consciência. O agro forte começa com você!</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- Rodapé -->
+    <footer>
+        <div class="container">
+            <p>Projeto desenvolvido para o Concurso Agrinho 2026</p>
+            <p>🌱 Agro forte, futuro sustentável: equilíbrio entre produção e meio ambiente</p>
+            <p>© 2026 - Gota da Consciência Populacional</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
